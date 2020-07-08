@@ -1,0 +1,402 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #dccfba;
+}
+
+nav {
+  background-color: darkolivegreen;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  margin-top: 37px;
+}
+
+.navBars {
+  display: none;
+  cursor: pointer;
+}
+
+nav .anchorHolder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+nav .anchorHolder a {
+  text-decoration: none;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+@media only screen and (max-width: 1000px) {
+  nav {
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  nav {
+    justify-content: flex-start;
+  }
+
+  nav .navBars {
+    display: block;
+    margin-left: 20px;
+  }
+
+  nav .anchorHolder {
+    position: absolute;
+    display: block;
+    top: 30px;
+    left: -300px;
+    width: 200px;
+    height: 300px;
+    background-color: darkolivegreen;
+  }
+
+  nav .anchorHolder a {
+    display: block;
+    padding: 20px 0 20px 0;
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .aboutsection p {
+    font-size: 12px;
+  }
+
+  .subsection p {
+    font-size: 14px;
+  }
+
+  .forestpic {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .productsection img {
+    height: 140px;
+    width: 140px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .productsection img {
+    height: 130px;
+    width: 130px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .productsection img {
+    height: 115px;
+    width: 115px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .productsection img {
+    height: 110px;
+    width: 110px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .productsection img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .productsection img {
+    height: 90px;
+    width: 90px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .productsection img {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .productsection img {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .left-footer p {
+    font-size: 9px;
+  }
+  .mid-footer {
+    font-size: 9px;
+  }
+
+  .right-footer {
+    font-size: 9px;
+  }
+
+  .left-footer h1 {
+    font-size: 13px;
+  }
+  .mid-footer h1 {
+    font-size: 13px;
+  }
+
+  .right-footer h1 {
+    font-size: 13px;
+  }
+}
+
+p {
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 5px;
+}
+
+h4 {
+  font-size: 50px;
+  color: black;
+  margin-left: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  width: 320px;
+  height: 25px;
+  margin-top: 10px;
+  background-color: #b5a486;
+}
+
+button {
+  font-size: 19px;
+  width: 120px;
+  background-color: #a7977b;
+}
+
+label {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.mainsection {
+  height: 82%;
+  width: 100%;
+}
+
+.contactsection {
+  height: 65%;
+  width: 100%;
+}
+
+.productsection {
+  height: 88%;
+  width: 100%;
+}
+
+.aboutsection {
+  height: 64%;
+  width: 100%;
+}
+
+.sitetitle {
+  background-color: #dccfba;
+  position: fixed;
+  z-index: 100;
+  width: 1600px;
+  margin-top: -20px;
+}
+
+.subsection {
+  height: auto;
+  background-color: darkolivegreen;
+  color: white;
+}
+
+.mountpic {
+  margin-top: 20px;
+
+  margin-bottom: 20px;
+
+  height: 612px;
+  width: 1519px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(241, 238, 238, 0.367)
+    ),
+    url(../images/mountain3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.textBox {
+  color: rgba(255, 255, 255, 0.551);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  text-align: left;
+  margin-left: 50px;
+  font-size: 84px;
+}
+
+.forestpic {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  float: right;
+}
+
+footer {
+  min-height: 180px;
+  display: flex;
+}
+
+.left-footer {
+  background-color: #d0be9c;
+  width: 100%;
+}
+
+.mid-footer {
+  background-color: #b5a486;
+  width: 100%;
+}
+
+.right-footer {
+  background-color: #d0be9c;
+  width: 100%;
+}
+
+.maincontent {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.aboutcontent {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.sitetitle img {
+  float: left;
+}
+
+.searchBox input {
+  float: right;
+  margin-right: 10px;
+}
+
+.buttonStuff button {
+  float: right;
+  margin-top: 10px;
+  margin-right: 110px;
+}
+
+.sub {
+  min-height: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sub .leftside {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub .rightside {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subcontent {
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+}
+
+.contactfield {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.footerContent {
+  margin-left: 10px;
+}
+
+.sub {
+  min-height: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sub .leftside {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub .rightside {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
